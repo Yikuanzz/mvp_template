@@ -1,0 +1,14 @@
+[server]
+host = "localhost"
+port = 8080
+mode = "debug"
+read_timeout = 60
+write_timeout = 60
+idle_timeout = 120
+
+[mysql]
+host = "localhost"
+port = "3306"
+username = "root"
+password = "123456"
+database = "mvp_db"

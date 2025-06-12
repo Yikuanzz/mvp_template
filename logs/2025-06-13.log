@@ -1,0 +1,13 @@
+2025/06/13-03:26:55	INFO	data/data.go:38	connecting to database	{"args": ["host","","port","","database",""]}
+2025/06/13-03:26:55	ERROR	data/data.go:42	failed to connect database	{"args": ["error",{"Op":"dial","Net":"tcp","Source":null,"Addr":{"IP":"","Port":0,"Zone":""},"Err":{"Syscall":"connectex","Err":10049}}]}
+2025/06/13-03:27:58	INFO	data/data.go:38	connecting to database	{"args": ["host","localhost","port","3306","database","mvp_db"]}
+2025/06/13-03:30:06	INFO	data/data.go:38	connecting to database	{"args": ["host","","port","","database",""]}
+2025/06/13-03:30:06	ERROR	data/data.go:42	failed to connect database	{"args": ["error",{"Op":"dial","Net":"tcp","Source":null,"Addr":{"IP":"","Port":0,"Zone":""},"Err":{"Syscall":"connectex","Err":10049}}]}
+2025/06/13-03:30:22	INFO	data/data.go:38	connecting to database	{"args": ["host","","port","","database",""]}
+2025/06/13-03:30:22	ERROR	data/data.go:42	failed to connect database	{"args": ["error",{"Op":"dial","Net":"tcp","Source":null,"Addr":{"IP":"","Port":0,"Zone":""},"Err":{"Syscall":"connectex","Err":10049}}]}
+2025/06/13-03:30:50	INFO	data/data.go:38	connecting to database	{"args": ["host","localhost","port","3306","database","mvp_db"]}
+2025/06/13-03:36:56	INFO	data/data.go:38	connecting to database	{"args": ["host","","port","","database",""]}
+2025/06/13-03:36:56	ERROR	data/data.go:42	failed to connect database	{"args": ["error",{"Op":"dial","Net":"tcp","Source":null,"Addr":{"IP":"","Port":0,"Zone":""},"Err":{"Syscall":"connectex","Err":10049}}]}
+2025/06/13-03:38:37	INFO	data/data.go:38	connecting to database	{"args": ["host","","port","","database",""]}
+2025/06/13-03:38:37	ERROR	data/data.go:42	failed to connect database	{"args": ["error",{"Op":"dial","Net":"tcp","Source":null,"Addr":{"IP":"","Port":0,"Zone":""},"Err":{"Syscall":"connectex","Err":10049}}]}
+2025/06/13-03:42:18	INFO	data/data.go:38	connecting to database	{"args": ["host","localhost","port","3306","database","mvp_db"]}
