@@ -10,6 +10,13 @@ import (
 type Config struct {
 	Server ServerConfig `mapstructure:"server"`
 	MySQL  MySQLConfig  `mapstructure:"mysql"`
+	Auth   AuthInfo     `mapstructure:"auth"`
+}
+
+// AuthInfo 认证信息
+type AuthInfo struct {
+	SecretKey string `mapstructure:"secret_key"`
+	Expires   int    `mapstructure:"expires"`
 }
 
 // ServerConfig 服务器配置

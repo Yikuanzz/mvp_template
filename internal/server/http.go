@@ -7,6 +7,7 @@ import (
 
 	"mvp/config"
 	"mvp/internal/handler"
+	"mvp/utils/middleware"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/wire"
@@ -23,13 +24,15 @@ func NewHTTPServer(userRouter *handler.UserHandler, conf *config.Config) *http.S
 	gin.SetMode(conf.Server.Mode)
 	router.Use(gin.Recovery())
 	router.Use(gin.Logger())
+	router.Use(middleware.Cors())
 
 	api := router.Group("/api/v1")
-
+	apiPublic := api
+	// apiAuth := api.Use(middleware.AuthMiddleware(conf.Auth.SecretKey))
 	// 用户路由
 	{
-		api.POST("/user/login", userRouter.Login)
-		api.POST("/user/register", userRouter.Register)
+		apiPublic.POST("/user/login", userRouter.Login)
+		apiPublic.POST("/user/register", userRouter.Register)
 	}
 
 	srv := &http.Server{

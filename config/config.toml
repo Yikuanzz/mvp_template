@@ -1,3 +1,7 @@
+[auth]
+secret_key = "whzhsk123456."
+expires = 24
+
 [server]
 host = "localhost"
 port = 8080
